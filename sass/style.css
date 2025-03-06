@@ -71,4 +71,19 @@ body {
   text-align: center;
 }
 
+.mt-4 {
+  text-align: center;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+.mt-4 h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.mt-4 p {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=style.css.map */

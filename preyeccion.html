@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet - Control de Inversiones Cripto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/sass/style.css">
+    <style>
+        .chart-container {
+            height: 400px;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: center;
+        }
+        .table-dark {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="home-btn"><a href="/index.html">Control de Inversiones Cripto</a></div>
+        <div class="btn-hdr">
+        <div><a href="/real-time-prices.html">Precios</a></div>
+        <div><a href="#">about</a></div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h1 class="mb-4">Proyección de Ganancias/Pérdidas</h1>
+        <div id="graficoGanancias" class="chart-container">
+            <canvas id="chartGanancias"></canvas>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h1 class="mb-4">Comparador de Activos</h1>
+
+        <!-- Gráfico comparativo -->
+        <div id="graficoComparador" class="chart-container">
+            <canvas id="chartComparador"></canvas>
+        </div>
+
+        <!-- Resumen estadístico -->
+        <table id="tablaResumen" class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th>Activo</th>
+                    <th>Inversión Total (MXN)</th>
+                    <th>Cantidad Total</th>
+                    <th>N° Operaciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="/scripts/proyeccion.js"></script>
+    <script src="/scripts/comparador.js"></script>
+</body>
+</html>
+

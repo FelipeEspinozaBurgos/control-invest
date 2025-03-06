@@ -34,3 +34,18 @@ body {
 .mb-4{
     text-align: center;
 }
+
+.mt-4{
+    text-align: center;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    h3{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    p{
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+}
