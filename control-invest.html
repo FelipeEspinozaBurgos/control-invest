@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Inversiones Cripto</title>
+
+    <!-- Carga de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/style.css">
+
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="home-btn"><a href="#">H O M E</a></div>
+        <div class="btn-hdr">
+        <div><a href="#">link1</a></div>
+        <div><a href="#">link2</a></div>
+        </div>
+    </header>
+
+<div class="container mt-5">
+    <h1 class="mb-4">Analizador de Inversiones Cripto</h1>
+
+    <!-- Resumen General -->
+    <div id="resumenGeneral" class="mb-5"></div>
+
+    <!-- Gráficos -->
+    <div id="graficos" class="chart-container"></div>
+
+    <!-- Tabla -->
+    <table id="tablaTransacciones" class="table table-striped table-dark" style="width:100%">
+        <thead>
+            <tr>
+                <th>Activo</th>
+                <th>Tipo</th>
+                <th>Monto</th>
+                <th>Cantidad</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</div>
+<div class="container mt-4">
+    <h3>Agregar Nueva Operación</h3>
+    <form id="formNuevaOperacion">
+        <div class="row g-3">
+            <div class="col-md-3">
+                <input type="text" id="activo" class="form-control" placeholder="Activo (e.g., XRP)" required>
+            </div>
+            <div class="col-md-3">
+                <select id="tipo" class="form-select" required>
+                    <option value="" disabled selected>Tipo</option>
+                    <option value="compra">Compra</option>
+                    <option value="venta">Venta</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="number" id="monto" class="form-control" placeholder="Monto (MXN)" required>
+            </div>
+            <div class="col-md-2">
+                <input type="number" id="cantidad" class="form-control" placeholder="Cantidad" step="0.000001" required>
+            </div>
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary w-100">Agregar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Carga de scripts -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+
+<!-- Archivos personalizados -->
+<script src="/scripts/app.js"></script>
+<script src="/scripts/new-operation.js"></script>
+<script src="/scripts/header.js"></script>
+
+</body>
+</html>

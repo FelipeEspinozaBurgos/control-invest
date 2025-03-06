@@ -1,0 +1,36 @@
+ @use 'header';
+
+$color1:#000;
+$color2:#fff;
+
+*{
+    background-color: #333;
+    color:#fff ;
+}
+
+body {
+    background-color: $color1;
+}
+
+.resumen-activo {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background: white;
+}
+
+.resumen-activo h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    border-radius: 8px;
+}
+
+.mb-4{
+    text-align: center;
+}
